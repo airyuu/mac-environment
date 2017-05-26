@@ -49,10 +49,12 @@ set -g history-limit 5000
 # use vim key bindings
 setw -g mode-keys vi
 
-set-option -g mouse-select-pane on
-set-option -g mouse-select-window on
-set-option -g mode-mouse on
-set-option -g mouse-resize-pane on
+# set-option -g mouse-select-pane on
+# set-option -g mouse-select-window on
+# set-option -g mode-mouse on
+# set-option -g mouse-resize-pane on
+
+set -g mouse on
 
 # decrease command delay (increases vim responsiveness)
 set -sg escape-time 1
@@ -113,7 +115,7 @@ bind r source-file ~/.tmux.conf \; display "Reloaded!"
 ###########################
 
 # enable UTF-8 support in status bar
-set -g status-utf8 on
+# set -g status-utf8 on
 
 # set refresh interval for status bar
 set -g status-interval 30
@@ -168,6 +170,7 @@ set-option -g pane-active-border-fg colour240
 # pane number display
 set-option -g display-panes-active-colour colour33
 set-option -g display-panes-colour colour166
+
 ```
 
 #### Setup vim
